@@ -102,9 +102,9 @@ impl Device {
 #[allow(broken_intra_doc_links)]
 #[derive(Debug)]
 pub struct Program {
-    context: rustacuda::context::UnownedContext,
-    module: rustacuda::module::Module,
-    stream: Stream,
+    pub context: rustacuda::context::UnownedContext,
+    pub module: rustacuda::module::Module,
+    pub stream: Stream,
     device_name: String,
 }
 
