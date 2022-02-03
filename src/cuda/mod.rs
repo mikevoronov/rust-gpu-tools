@@ -137,7 +137,6 @@ impl Program {
 
     /// Creates a program for a specific device from a compiled CUDA binary.
     pub fn from_bytes(device: &Device, bytes: &[u8]) -> GPUResult<Program> {
-        /*
         rustacuda::context::CurrentContext::set_current(&device.context)?;
         let module = rustacuda::module::Module::load_from_bytes(bytes).map_err(|err| {
             Self::pop_context();
@@ -155,8 +154,6 @@ impl Program {
         };
         Self::pop_context();
         Ok(prog)
-         */
-        unimplemented!()
     }
 
     /// Creates a new buffer that can be used for input/output with the GPU.
